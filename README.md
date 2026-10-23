@@ -1,6 +1,6 @@
-# 🎨 PhotoCraft - Photoshop Mobile para Android
+# 🎨 mynxx fhoto editir - Edição de Fotos para Android
 
-Um aplicativo nativo para Android de edição profissional de fotos inspirado no **Adobe Photoshop**, adaptado com interface moderna, rápida e otimizada para telas sensíveis ao toque de smartphones.
+Um aplicativo nativo para Android de edição profissional de fotos no estilo **Photoshop**, adaptado com interface moderna, rápida e otimizada para telas sensíveis ao toque de smartphones.
 
 Desenvolvido em **Kotlin** com suporte total a **Android 8.0 até Android 16 (API 26 a 35)**.
 

@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PhotoshopMobile"
+rootProject.name = "mynxx-fhoto-editir"
 include(":app")
