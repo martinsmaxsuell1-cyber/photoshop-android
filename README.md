@@ -1,4 +1,4 @@
-# 🎨 mynxx fhoto editir - Edição de Fotos para Android
+# 🎨 mynxx fhoto editor - Edição de Fotos para Android
 
 Um aplicativo nativo para Android de edição profissional de fotos no estilo **Photoshop**, adaptado com interface moderna, rápida e otimizada para telas sensíveis ao toque de smartphones.
 

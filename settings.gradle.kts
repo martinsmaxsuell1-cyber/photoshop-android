@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "mynxx-fhoto-editir"
+rootProject.name = "mynxx-fhoto-editor"
 include(":app")
