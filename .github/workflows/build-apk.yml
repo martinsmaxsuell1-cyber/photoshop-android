@@ -1,0 +1,61 @@
+name: Build and Release APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug --stacktrace
+
+      - name: Prepare APK File
+        run: cp app/build/outputs/apk/debug/app-debug.apk mynxx-fhoto-editor.apk
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.0
+          name: "mynxx fhoto editor v1.0.0"
+          body: |
+            ## 🎨 mynxx fhoto editor - v1.0.0
+            
+            Baixe o arquivo `mynxx-fhoto-editor.apk` abaixo para instalar diretamente no seu celular Android!
+            
+            ### ✨ Recursos:
+            - 📷 Tirar foto na hora com a Câmera ou pegar da Galeria
+            - 🖌️ Pincel com cores e Borracha com espessura ajustável
+            - 🎨 Filtros em tempo real (P&B, Sépia, Vintage, Invert, Quente, Frio)
+            - ⚖️ Ajustes finos de Brilho, Contraste e Saturação
+            - 🔄 Rotação 90° e texto livre arrastável
+            - 💾 Salva direto na Galeria pública (`Pictures/PhotoshopMobile`)
+          files: mynxx-fhoto-editor.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mynxx-fhoto-editor-apk
+          path: mynxx-fhoto-editor.apk
