@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PhotoshopMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/ps_accent</item>
+        <item name="colorPrimaryVariant">@color/ps_accent_light</item>
+        <item name="colorOnPrimary">@color/ps_text_primary</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/ps_accent</item>
+        <item name="colorSecondaryVariant">@color/ps_accent_light</item>
+        <item name="colorOnSecondary">@color/ps_text_primary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/ps_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/ps_surface</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">@color/ps_bg_dark</item>
+        <item name="colorSurface">@color/ps_surface</item>
+        <item name="colorOnSurface">@color/ps_text_primary</item>
+    </style>
+</resources>

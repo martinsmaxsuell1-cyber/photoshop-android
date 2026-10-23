@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Photoshop Mobile</string>
+    <string name="app_tagline">Edição de fotos profissional para Android</string>
+
+    <!-- Top Bar Actions -->
+    <string name="action_undo">Desfazer</string>
+    <string name="action_redo">Refazer</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_reset">Resetar</string>
+
+    <!-- Bottom Tools -->
+    <string name="tool_camera">Câmera</string>
+    <string name="tool_gallery">Galeria</string>
+    <string name="tool_brush">Pincel</string>
+    <string name="tool_eraser">Borracha</string>
+    <string name="tool_filters">Filtros</string>
+    <string name="tool_adjust">Ajustes</string>
+    <string name="tool_rotate">Girar</string>
+    <string name="tool_text">Texto</string>
+
+    <!-- Adjustments & Filters -->
+    <string name="filter_original">Original</string>
+    <string name="filter_bw">Preto &amp; Branco</string>
+    <string name="filter_sepia">Sépia</string>
+    <string name="filter_vintage">Vintage</string>
+    <string name="filter_invert">Inverter</string>
+    <string name="filter_warm">Quente</string>
+    <string name="filter_cool">Frio</string>
+
+    <string name="label_brightness">Brilho</string>
+    <string name="label_contrast">Contraste</string>
+    <string name="label_saturation">Saturação</string>
+    <string name="label_brush_size">Espessura do Pincel</string>
+
+    <!-- Dialogs & Prompts -->
+    <string name="prompt_add_text">Adicionar Texto na Imagem</string>
+    <string name="hint_enter_text">Digite o texto...</string>
+    <string name="btn_add">Adicionar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="msg_saved_success">Imagem salva com sucesso na sua Galeria!</string>
+    <string name="msg_save_error">Erro ao salvar a imagem.</string>
+    <string name="msg_permission_camera">A permissão da câmera é necessária para tirar fotos.</string>
+    <string name="empty_canvas_hint">Toque em Câmera ou Galeria para carregar uma imagem</string>
+</resources>
